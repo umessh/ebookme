@@ -1,0 +1,15 @@
+<ion-view view-title="Search - {{searchTag}}">
+    <ion-content class="padding"> 
+     <ion-list>
+		<ion-item ng-repeat="book in books" class="item-thumbnail-left">
+			<img ng-src="{{book.Image}}"/>
+			<h2>{{book.Title}}</h2>
+			<p>{{book.Description}}</p>
+			<ion-option-button class="button-positive"
+                       ng-click="download({{book.ID}})">
+      						Download
+    		</ion-option-button>
+		</ion-item>
+     </ion-list>      
+    </ion-content>
+</ion-view>

@@ -1,0 +1,16 @@
+<ion-view view-title="Home">
+<ion-content class="center">
+<div class="list">
+	<div class="item item-input-inset">
+		<label class="item-input-wrapper">
+			<i class="icon ion-search placeholder-icon"></i>
+			<input type="text" placeholder="Search Ebook" ng-model="form.tag" >
+		</label>
+		<button class="button button-small button-positive" ng-click="search()">
+		Search
+		</button>
+	</div>
+	<p>{{tag}}</p>
+</div>
+</ion-content>
+</ion-view>
